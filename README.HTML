@@ -1,52 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>PepeRush</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: black;
-      color: white;
-      text-align: center;
-    }
-    header {
-      padding: 50px;
-      background: linear-gradient(to right, green, purple);
-    }
-    section {
-      padding: 40px;
-    }
-    button {
-      padding: 15px 30px;
-      background: green;
-      border: none;
-      color: white;
-      font-size: 18px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAZE CARCO | Urban Techwear & Essentials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
+        .oraimo-green { color: #ccff00; }
+        .oraimo-bg-green { background-color: #ccff00; }
+        .card-gradient { background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%); }
+        .nav-blur { backdrop-filter: blur(10px); background: rgba(0,0,0,0.8); }
+        .hero-banner {
+            background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%), 
+                        url('https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <h1>PepeRush ($PRUSH)</h1>
-  <p>The fastest meme coin ⚡🐸</p>
-  <button>Buy Now</button>
-</header>
+    <div class="oraimo-bg-green text-black text-center text-xs py-1 font-bold uppercase tracking-widest">
+        Free Delivery on all orders over $50 | Craze Carco Official Store
+    </div>
 
-<section>
-  <h2>About</h2>
-  <p>Community-driven meme coin built for speed and fun.</p>
-</section>
+    <nav class="sticky top-0 z-50 nav-blur border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <h1 class="text-2xl font-800 tracking-tighter italic">CRAZE <span class="oraimo-green">CARCO</span></h1>
+                <div class="hidden md:flex gap-6 text-sm font-semibold uppercase tracking-wide">
+                    <a href="#" class="hover:text-[#ccff00] transition">Apparel</a>
+                    <a href="#" class="hover:text-[#ccff00] transition">Accessories</a>
+                    <a href="#" class="hover:text-[#ccff00] transition">Collections</a>
+                    <a href="#" class="oraimo-green">Flash Sale</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <i data-lucide="search" class="w-5 h-5 cursor-pointer"></i>
+                <i data-lucide="user" class="w-5 h-5 cursor-pointer"></i>
+                <div class="relative cursor-pointer">
+                    <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                    <span class="absolute -top-2 -right-2 bg-[#ccff00] text-black text-[10px] font-bold px-1.5 rounded-full">0</span>
+                </div>
+                <i data-lucide="menu" class="md:hidden w-6 h-6"></i>
+            </div>
+        </div>
+    </nav>
 
-<section>
-  <h2>How to Buy</h2>
-  <p>1. Get Phantom Wallet</p>
-  <p>2. Buy SOL</p>
-  <p>3. Swap on Pump.fun</p>
-</section>
+    <header class="hero-banner h-[70vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 w-full">
+            <div class="max-w-xl">
+                <span class="oraimo-bg-green text-black px-3 py-1 text-sm font-bold uppercase mb-4 inline-block">New Arrival</span>
+                <h2 class="text-6xl font-800 mb-6 leading-tight">URBAN UTILITY <br> REINVENTED.</h2>
+                <p class="text-gray-300 mb-8 text-lg">Engineered for the modern explorer. Durable, functional, and unapologetically bold.</p>
+                <div class="flex gap-4">
+                    <button class="oraimo-bg-green text-black px-8 py-3 font-bold uppercase hover:opacity-90 transition">Shop Now</button>
+                    <button class="border border-white px-8 py-3 font-bold uppercase hover:bg-white hover:text-black transition">Explore</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="flex justify-between items-end mb-10">
+            <h3 class="text-3xl font-bold italic uppercase">Shop by <span class="oraimo-green">Category</span></h3>
+            <a href="#" class="text-sm underline font-bold uppercase tracking-widest">View All</a>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="relative h-64 overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <span class="text-xl font-bold uppercase tracking-widest">Cargo Pants</span>
+                </div>
+            </div>
+            <div class="relative h-64 overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <span class="text-xl font-bold uppercase tracking-widest">Hoodies</span>
+                </div>
+            </div>
+            <div class="relative h-64 overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <span class="text-xl font-bold uppercase tracking-widest">Tees</span>
+                </div>
+            </div>
+            <div class="relative h-64 overflow-hidden group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1576905341401-7274bb996a0a?auto=format&fit=crop&w=500" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <span class="text-xl font-bold uppercase tracking-widest">Bags</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#0a0a0a] py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center gap-4 mb-10">
+                <h3 class="text-3xl font-bold italic uppercase">Flash <span class="oraimo-green">Sales</span></h3>
+                <div class="bg-red-600 px-3 py-1 font-mono font-bold animate-pulse">Ends in: 12:45:02</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="card-gradient p-4 border border-gray-800 hover:border-[#ccff00] transition group">
+                    <div class="relative mb-4 bg-zinc-900 overflow-hidden">
+                        <span class="absolute top-2 left-2 bg-[#ccff00] text-black text-[10px] font-bold px-2 py-1 z-10">-30%</span>
+                        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=500" alt="Product" class="w-full h-64 object-cover group-hover:scale-105 transition">
+                        <button class="absolute bottom-0 left-0 w-full bg-[#ccff00] text-black py-3 font-bold translate-y-full group-hover:translate-y-0 transition">QUICK ADD</button>
+                    </div>
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="font-semibold text-gray-200">Stealth Multi-Pocket Cargo</h4>
+                        <div class="text-right">
+                            <span class="block text-[#ccff00] font-bold">$45.00</span>
+                            <span class="block text-gray-500 text-sm line-through">$65.00</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="star" class="w-3 h-3 fill-[#ccff00] text-[#ccff00]"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-[#ccff00] text-[#ccff00]"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-[#ccff00] text-[#ccff00]"></i>
+                        <i data-lucide="star" class="w-3 h-3 fill-[#ccff00] text-[#ccff00]"></i>
+                        <i data-lucide="star" class="w-3 h-3 text-gray-600"></i>
+                        <span class="text-[10px] text-gray-400 ml-1">(24)</span>
+                    </div>
+                </div>
+
+                <div class="card-gradient p-4 border border-gray-800 hover:border-[#ccff00] transition group">
+                    <div class="relative mb-4 bg-zinc-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&w=500" class="w-full h-64 object-cover">
+                        <button class="absolute bottom-0 left-0 w-full bg-[#ccff00] text-black py-3 font-bold translate-y-full group-hover:translate-y-0 transition">QUICK ADD</button>
+                    </div>
+                    <h4 class="font-semibold text-gray-200 mb-2">Reflective Box Tee</h4>
+                    <span class="text-[#ccff00] font-bold">$28.00</span>
+                </div>
+
+                <div class="card-gradient p-4 border border-gray-800 hover:border-[#ccff00] transition group">
+                    <div class="relative mb-4 bg-zinc-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a991?auto=format&fit=crop&w=500" class="w-full h-64 object-cover">
+                        <button class="absolute bottom-0 left-0 w-full bg-[#ccff00] text-black py-3 font-bold translate-y-full group-hover:translate-y-0 transition">QUICK ADD</button>
+                    </div>
+                    <h4 class="font-semibold text-gray-200 mb-2">Tactical Sling Bag</h4>
+                    <span class="text-[#ccff00] font-bold">$35.00</span>
+                </div>
+
+                <div class="card-gradient p-4 border border-gray-800 hover:border-[#ccff00] transition group">
+                    <div class="relative mb-4 bg-zinc-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=500" class="w-full h-64 object-cover">
+                        <button class="absolute bottom-0 left-0 w-full bg-[#ccff00] text-black py-3 font-bold translate-y-full group-hover:translate-y-0 transition">QUICK ADD</button>
+                    </div>
+                    <h4 class="font-semibold text-gray-200 mb-2">Heavyweight Tech Hoodie</h4>
+                    <span class="text-[#ccff00] font-bold">$55.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <h2 class="text-2xl font-800 italic mb-6">CRAZE <span class="oraimo-green">CARCO</span></h2>
+                    <p class="text-gray-400 text-sm leading-relaxed">Defining urban utility since 2024. CRAZE CARCO brings you the best in techwear, street essentials, and functional gear.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold uppercase mb-6">Support</h5>
+                    <ul class="text-gray-400 text-sm space-y-4">
+                        <li><a href="#" class="hover:text-white transition">Order Tracking</a></li>
+                        <li><a href="#" class="hover:text-white transition">Shipping Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Returns & Exchanges</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold uppercase mb-6">Company</h5>
+                    <ul class="text-gray-400 text-sm space-y-4">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold uppercase mb-6">Newsletter</h5>
+                    <p class="text-gray-400 text-sm mb-4">Get 10% off your first order!</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Email Address" class="bg-zinc-900 border border-gray-800 px-4 py-2 w-full focus:outline-none focus:border-[#ccff00]">
+                        <button class="oraimo-bg-green text-black px-4 font-bold">JOIN</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-xs uppercase tracking-widest">© 2024 CRAZE CARCO. ALL RIGHTS RESERVED.</p>
+                <div class="flex gap-6">
+                    <i data-lucide="facebook" class="w-5 h-5 text-gray-400 hover:text-[#ccff00] cursor-pointer"></i>
+                    <i data-lucide="instagram" class="w-5 h-5 text-gray-400 hover:text-[#ccff00] cursor-pointer"></i>
+                    <i data-lucide="twitter" class="w-5 h-5 text-gray-400 hover:text-[#ccff00] cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
 </body>
 </html>
